@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "plugins": [
+    "react-native",
+    "react",
+    "flowtype",
+    "jsx-a11y",
+    "import"
+  ],
+  "rules": {
+    "strict": [0, "global"],
+    "func-names": ["error", "never"],
+    "max-len": ["error", 150],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+  }
+}

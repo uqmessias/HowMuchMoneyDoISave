@@ -4,15 +4,31 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
+    "lint": "node node_modules/eslint/bin/eslint.js *.js js/**/*.js",
+		"flow-typed": "node_modules/.bin/flow-typed install",
+		"flow": "node_modules/.bin/flow",
+    "flow-stop": "node_modules/.bin/flow stop",
+    "test": "jest"
 	},
 	"dependencies": {
 		"react": "16.0.0-alpha.12",
 		"react-native": "0.45.1"
 	},
 	"devDependencies": {
+		"babel-eslint": "^7.2.3",
 		"babel-jest": "20.0.3",
+		"babel-plugin-syntax-flow": "^6.18.0",
+		"babel-preset-flow": "^6.23.0",
 		"babel-preset-react-native": "2.0.0",
+		"eslint": "^3.19.0",
+		"eslint-config-airbnb": "^15.0.1",
+		"eslint-plugin-flowtype": "^2.34.1",
+		"eslint-plugin-import": "^2.6.1",
+		"eslint-plugin-jsx-a11y": "^5.0.1",
+		"eslint-plugin-react": "^7.1.0",
+		"eslint-plugin-react-native": "^2.3.2",
+		"flow-bin": "0.45.0",
+		"flow-typed": "2.1.2",
 		"jest": "20.0.4",
 		"react-test-renderer": "16.0.0-alpha.12"
 	},
